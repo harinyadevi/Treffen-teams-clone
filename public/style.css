@@ -1,0 +1,182 @@
+/* styling front end*/
+* {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  border: black;
+} /* style for the entire application*/
+
+.main {
+  overflow: hidden;
+  /* designing main div*/
+  height: 660px;
+  display: flex;
+}
+
+.header { /* header design*/
+  height: 150px;
+  position: relative;
+  width: 100%;
+}
+
+.header__back {
+  display: none;
+  position: absolute;
+  font-size: 1.3rem;
+  top: 17px;
+  left: 28px;
+  color: #fff;
+}
+
+/* features on the top right corner*/
+.features { 
+  padding: 0px 10px 10px 10px;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.button { /*styling buttons*/
+  background-color: #fd0606;
+  border: none;
+  color: white;
+  padding: 10px 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 2px 2px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.m1{ /*for m1 div in room.ejs*/
+  
+  align-items: center;
+  height: 50px;
+  padding-left: 10px;
+  color: #fff;
+}
+
+.main__left {
+  flex: 0.7;
+  display: flex;
+  flex-direction: column;
+}
+
+.allvideos {  /* video display div*/
+  flex-grow: 1;
+  overflow-y: scroll;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  background-color: #000;
+}
+
+.allvideos::-webkit-scrollbar { /*enable scrolling for videos*/
+  display: none;
+}
+
+video {  /*videos of the user div*/
+  height: 300px;
+  margin: 0.5rem;
+  width: 400px;
+  object-fit: cover;
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+}
+
+.main__right {
+  background-color: rgb(39, 38, 38);
+  display: flex;
+  flex-direction: column;
+  flex: 0.3;
+}
+
+.main__chatbox {  /*styling chat window*/
+  flex-grow: 1;
+  overflow-y: scroll;
+}
+
+.main__chatbox::-webkit-scrollbar {
+  display: none;
+}
+
+.main__typing {  /*aligning chat*/
+  padding: 1rem;
+  display: flex;
+}
+
+.main__typing > input {
+  height: 40px;
+  flex: 1;
+  font-size: 16px;
+  padding-left: 20px;
+  opacity: 0.7;
+}
+
+.allmsgs {  /*chat box*/
+  display: flex;
+  flex-direction: column;
+  margin: 1.5rem;
+}
+
+.message {  /*message*/
+  display: flex;
+  flex-direction: column;
+}
+
+.message > b {
+  display: flex;
+  color: #fff;
+}
+
+.message > b > i {
+  margin-right: 11px;
+  font-size: 24px;
+}
+
+.message > span {
+  background-color: rgb(192, 190, 190);
+  margin: 16px 0;
+  padding: 10px;
+  
+}
+
+#videospace {  /*video space styling*/
+  overflow: auto;
+  display: flex;
+  transform: scale(-1, 1);
+  justify-content: center;
+  flex-wrap: wrap;
+  
+}
+
+@media (max-width: 700px) {
+  .main__right {
+    display: none;
+  }
+  .main__left {
+    width: 100%;
+    flex: 1;
+  }
+
+  video {
+    height: auto;
+    width: 100%;
+  }
+
+}
+ul {
+  list-style-type: none;
+  overflow: hidden;
+  margin: 0;
+  padding: 10px;
+  background-color: #000;
+}
+
+li {
+  float: left;
+}
