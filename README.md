@@ -6,9 +6,6 @@
 ### Check out the live demo of Treffen!
 https://treffen-meet-anywhere.herokuapp.com/
 
-### Find the project documentation in the link below
-https://drive.google.com/file/d/1j8__CHXr-ulp_zboF1LKEkJjmih9Soyj/view?usp=sharing
-
 ### Features of the application:
 - A minimum of two users can connect over video and audio channels
 - Participants of the meeting can turn on and off their video and audio whenever necessary
