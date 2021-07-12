@@ -4,8 +4,10 @@
 #### Wish to meet your friends right now? Wanna have a meeting with your colleagues? Need to give a study lecture online? Presenting to you “Treffen” – a video conferencing application that allows users to communicate over video and audio channels.
 #### Treffen gives you a smooth and user-friendly video conferencing experience along with chat and screen sharing features :) 
 ### Check out the live demo of Treffen!
+https://treffen-meet-anywhere.herokuapp.com/
 
 ### Find the project documentation in the link below
+https://drive.google.com/file/d/1j8__CHXr-ulp_zboF1LKEkJjmih9Soyj/view?usp=sharing
 
 ### Features of the application:
 - A minimum of two users can connect over video and audio channels
